@@ -2,9 +2,9 @@
   <a href="#-stack">✨ Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-feito-por">:rocket: Feito por</a>
   <a href="#projeto">💻 Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#funcionalidades">⚙️ Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Simulação"> 🔁 Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Excecução">💡 Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#funcionalidades">⚙️ Funcionalidades </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Simulação"> 🔁 Simulação </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Excecução">💡 Execução</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  
 
 </p>
@@ -155,7 +155,7 @@ O uso de listas encadeadas e conjuntos otimiza as operações específicas do co
 Essa simulação cobre diversos aspectos do código, incluindo a *criação de filas*, *atendimento*, *desistência*, *criação* e *verificação de grupos*, e *verificação de existência de pessoas*.
 
 
- ## 💡 Excecução
+ ## 💡 Exececução
 
 --Para executar o projeto, é necessário ter o *Java Development Kit (JDK)* instalado e configurado no sistema. 
 --Além disso, o Visual Studio Code com a extensão *Java Extension Pack* é recomendado para facilitar o desenvolvimento.
