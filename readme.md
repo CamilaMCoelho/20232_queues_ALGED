@@ -157,10 +157,10 @@ Essa simulação cobre diversos aspectos do código, incluindo a *criação de f
 
  ## 💡 Exececução
 
---Para executar o projeto, é necessário ter o *Java Development Kit (JDK)* instalado e configurado no sistema. 
---Além disso, o Visual Studio Code com a extensão *Java Extension Pack* é recomendado para facilitar o desenvolvimento.
---O arquivo de *entrada filas.txt* contém os comandos que serão processados pela aplicação para simular o comportamento das filas.
---Certifique-se de que o *Maven* está instalado no seu sistema. Você pode fazer o download do Maven em https://maven.apache.org/download.cgi e seguir as instruções de instalação.
---Abra um terminal na pasta onde está localizado o *arquivo pom.xml* do  projeto.
---Execute o seguinte comando para construir o projeto usando o Maven: *mvn clean install*
---Após a construção bem-sucedida, você pode executar o projeto.Execute o seguinte comando no terminal: *java -cp target/demo.jar.ClassePrincipal*
+--Para executar o projeto, é necessário ter o *Java Development Kit (JDK)* instalado e configurado no sistema. <br>
+--Além disso, o Visual Studio Code com a extensão *Java Extension Pack* é recomendado para facilitar o desenvolvimento.<br>
+--O arquivo de *entrada filas.txt* contém os comandos que serão processados pela aplicação para simular o comportamento das filas.<br>
+--Certifique-se de que o *Maven* está instalado no seu sistema. Você pode fazer o download do Maven em https://maven.apache.org/download.cgi e seguir as instruções de instalação.<br>
+--Abra um terminal na pasta onde está localizado o *arquivo pom.xml* do  projeto.<br>
+--Execute o seguinte comando para construir o projeto usando o Maven: *mvn clean install*<br>
+--Após a construção bem-sucedida, você pode executar o projeto.Execute o seguinte comando no terminal: *java -cp target/demo.jar.ClassePrincipal* <br>
