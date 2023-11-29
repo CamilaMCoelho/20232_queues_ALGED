@@ -68,36 +68,36 @@ O uso de listas encadeadas e conjuntos otimiza as operações específicas do co
 
 ## ⚙️ Funcionalidades
 
-1. *Criação de Filas:*
-    --Comando:  `criaFila: <idFila> `
+1. *Criação de Filas:* <br>
+    --Comando:  `criaFila: <idFila> ` <br>
     --Cria uma nova fila com o identificador especificado.
 
-2. *Atendimento de Filas:*
-    --Comando: `atendeFila: <idFila1> <idFila2> ...`
+2. *Atendimento de Filas:* <br>
+    --Comando: `atendeFila: <idFila1> <idFila2> ...` <br>
     --Realiza o atendimento nas filas especificadas, removendo o primeiro cliente de cada fila atendida.
 
-3. *Chegada de Clientes:*
-    --Comando: `chegou: <cliente1> <cliente2> ...`
+3. *Chegada de Clientes:* <br>
+    --Comando: `chegou: <cliente1> <cliente2> ...` <br>
     --Adiciona os clientes às filas de acordo com a lógica de conhecimento mútuo entre pessoas.
 
-4. *Desistência de Atendimento:*
-    --Comando: `desiste: <cliente1> <cliente2> ...`
+4. *Desistência de Atendimento:* <br>
+    --Comando: `desiste: <cliente1> <cliente2> ...` <br>
     --Remove os clientes especificados de todas as filas.
 
-5.*Criação de Grupos de Conhecidos:*
-    --Comando: `grupo: <nomeGrupo>: <pessoa1> <pessoa2>` ...
+  5. *Criação de Grupos de Conhecidos:* <br>
+    --Comando: `grupo: <nomeGrupo>: <pessoa1> <pessoa2>` ... <br>
     --Define um grupo de pessoas que se conhecem mutuamente.
 
-6. *Verificação de Conhecimento entre Pessoas:*
-    --Comando: `conhece: <pessoa1> <pessoa2>`
+  6. *Verificação de Conhecimento entre Pessoas:* <br>
+    --Comando: `conhece: <pessoa1> <pessoa2>` <br>
     --Verifica se duas pessoas se conhecem e exibe o resultado.
 
-7. *Verificação de Existência de Pessoa:*
-    --Comando: `existe: <pessoa>`
+  7. *Verificação de Existência de Pessoa:* <br>
+    --Comando: `existe: <pessoa>` <br>
     --Verifica se uma pessoa específica existe em algum grupo conhecido.
 
-8.*Impressão do Estado Atual das Filas:*
-    --Comando: `imprime`
+  8. *Impressão do Estado Atual das Filas:* <br>
+    --Comando: `imprime` <br>
     --Exibe o estado atual de todas as filas.
 
 ## 🔁 Simulação
