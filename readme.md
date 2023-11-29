@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#-stack">✨ Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-feito-por">:rocket: Feito por</a>
+  <a href="#feito por">💻 Feito por 🚀 </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#projeto">💻 Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#funcionalidades">⚙️ Funcionalidades </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Simulação"> 🔁 Simulação </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
