@@ -44,25 +44,24 @@ Este projeto oferece uma abordagem prática para compreender a implementação d
 
 As principais estruturas de dados utilizadas no código são:
 
-    1.Map (filas):
+   1.Map (filas):  
+  >Tipo: Map <String, Queue<Pessoa>> <br>
+  Uso: Armazena filas de pessoas, onde as chaves são strings representando os identificadores de filas, e os valores são filas implementadas como listas encadeadas (Queue). <br>
 
-    --Tipo: Map<String, Queue<Pessoa>>
-    --Uso: Armazena filas de pessoas, onde as chaves são strings representando os identificadores de filas, e os valores são filas implementadas como listas encadeadas (Queue).
+  2.Map (grupos):
 
-    2.Map (grupos):
+  >Tipo: Map<String, Set<String>>  <br>
+  Uso: Armazena grupos de pessoas que se conhecem, onde as chaves são strings representando os nomes dos grupos, e os valores são conjuntos (Set) contendo os nomes das pessoas no grupo.
 
-    --Tipo: Map<String, Set<String>>
-    --Uso: Armazena grupos de pessoas que se conhecem, onde as chaves são strings representando os nomes dos grupos, e os valores são conjuntos (Set) contendo os nomes das pessoas no grupo.
+  3.Lista Encadeada (LinkedList):
 
-    3.Lista Encadeada (LinkedList):
+  >Tipo: Queue<Pessoa>  <br>
+  Uso: Implementa as filas de pessoas. A estrutura de lista encadeada é eficiente para adicionar e remover elementos no início e no final da fila, que são operações comuns em filas.
 
-    --Tipo: Queue<Pessoa>
-    --Uso: Implementa as filas de pessoas. A estrutura de lista encadeada é eficiente para adicionar e remover elementos no início e no final da fila, que são operações comuns em filas.
+  4.Conjunto (HashSet):
 
-    4.Conjunto (HashSet):
-
-    --Tipo: Set<String>
-    --Uso: Representa conjuntos de pessoas que se conhecem. A estrutura de conjunto é útil para verificar a existência de elementos e realizar operações de interseção entre conjuntos, como verificar se duas pessoas se conhecem.
+  >Tipo: Set<String>  <br>
+  Uso: Representa conjuntos de pessoas que se conhecem. A estrutura de conjunto é útil para verificar a existência de elementos e realizar operações de interseção entre conjuntos, como verificar se duas pessoas se conhecem. <br>
 
 Essas estruturas de dados foram escolhidas com base na eficiência das operações necessárias para as funcionalidades do projeto, como *adição*, *remoção* e *consulta de elementos*. 
 O uso de listas encadeadas e conjuntos otimiza as operações específicas do contexto de filas e grupos de pessoas.
@@ -155,7 +154,7 @@ O uso de listas encadeadas e conjuntos otimiza as operações específicas do co
 Essa simulação cobre diversos aspectos do código, incluindo a *criação de filas*, *atendimento*, *desistência*, *criação* e *verificação de grupos*, e *verificação de existência de pessoas*.
 
 
- ## 💡 Exececução
+ ## 💡 Execução
 
 --Para executar o projeto, é necessário ter o *Java Development Kit (JDK)* instalado e configurado no sistema. <br>
 --Além disso, o Visual Studio Code com a extensão *Java Extension Pack* é recomendado para facilitar o desenvolvimento.<br>
