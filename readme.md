@@ -103,41 +103,41 @@ O uso de listas encadeadas e conjuntos otimiza as operações específicas do co
 ## 🔁 Simulação
 
 ### *Entrada:*
->criaFila: Guiche1
->criaFila: Guiche2
->chegou: Maria Joao
->chegou: Manuel Alface Guga
->atendeFila: Guiche1 Guiche2
->imprime
->desiste: Joao Alface
->imprime
->grupo: Amigos Maria Joao
->grupo: Familia Manuel Guga
->conhece: Maria Manuel
->conhece: Alface Guga
->imprime
->existe: Joao
->existe: Maria
+>criaFila: Guiche1 <br>
+>criaFila: Guiche2 <br>
+>chegou: Maria Joao <br>
+>chegou: Manuel Alface Guga <br>
+>atendeFila: Guiche1 Guiche2 <br>
+>imprime <br>
+>desiste: Joao Alface <br>
+>imprime <br>
+>grupo: Amigos Maria Joao <br>
+>grupo: Familia Manuel Guga <br>
+>conhece: Maria Manuel <br>
+>conhece: Alface Guga <br>
+>imprime <br>
+>existe: Joao <br>
+>existe: Maria <br>
 
 ### *Saída:*
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel, Alface, Guga]
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel, Alface, Guga] <br>
 
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel]
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel] <br>
 
->#Amigos [Maria, Joao] 
->#Familia [Manuel, Guga] 
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel]
+>#Amigos [Maria, Joao]  <br>
+>#Familia [Manuel, Guga]  <br>
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel] <br>
 
->[Maria]*conhece*[Manuel]
->[Alface]*NÃO conhece*[Guga]
+>[Maria]*conhece*[Manuel] <br>
+>[Alface]*NÃO conhece*[Guga] <br>
 
->#Amigos [Maria, Joao] 
->#Familia [Manuel, Guga] 
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel]
+>#Amigos [Maria, Joao] <br>
+>#Familia [Manuel, Guga] <br>
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel] <br>
 
 ### *Explicação:*
 
