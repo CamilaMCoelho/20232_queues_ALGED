@@ -1,10 +1,10 @@
 <p align="center">
   <a href="#-stack">✨ Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-feito-por">:rocket: Feito por</a>
-  <a href="#-projeto">💻 Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="funcionalidades">⚙️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="Simulação">⚙️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="Excecução">⚙️ Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#feito por">💻 Feito por 🚀 </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto">💻 Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#funcionalidades">⚙️ Funcionalidades </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Simulação"> 🔁 Simulação </a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Excecução">💡 Execução</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  
 
 </p>
@@ -44,101 +44,100 @@ Este projeto oferece uma abordagem prática para compreender a implementação d
 
 As principais estruturas de dados utilizadas no código são:
 
-    1.Map (filas):
+   1.Map (filas):  
+  >Tipo: Map <String, Queue<Pessoa>> <br>
+  Uso: Armazena filas de pessoas, onde as chaves são strings representando os identificadores de filas, e os valores são filas implementadas como listas encadeadas (Queue). <br>
 
-    --Tipo: Map<String, Queue<Pessoa>>
-    --Uso: Armazena filas de pessoas, onde as chaves são strings representando os identificadores de filas, e os valores são filas implementadas como listas encadeadas (Queue).
+  2.Map (grupos):
 
-    2.Map (grupos):
+  >Tipo: Map<String, Set<String>>  <br>
+  Uso: Armazena grupos de pessoas que se conhecem, onde as chaves são strings representando os nomes dos grupos, e os valores são conjuntos (Set) contendo os nomes das pessoas no grupo.
 
-    --Tipo: Map<String, Set<String>>
-    --Uso: Armazena grupos de pessoas que se conhecem, onde as chaves são strings representando os nomes dos grupos, e os valores são conjuntos (Set) contendo os nomes das pessoas no grupo.
+  3.Lista Encadeada (LinkedList):
 
-    3.Lista Encadeada (LinkedList):
+  >Tipo: Queue<Pessoa>  <br>
+  Uso: Implementa as filas de pessoas. A estrutura de lista encadeada é eficiente para adicionar e remover elementos no início e no final da fila, que são operações comuns em filas.
 
-    --Tipo: Queue<Pessoa>
-    --Uso: Implementa as filas de pessoas. A estrutura de lista encadeada é eficiente para adicionar e remover elementos no início e no final da fila, que são operações comuns em filas.
+  4.Conjunto (HashSet):
 
-    4.Conjunto (HashSet):
-
-    --Tipo: Set<String>
-    --Uso: Representa conjuntos de pessoas que se conhecem. A estrutura de conjunto é útil para verificar a existência de elementos e realizar operações de interseção entre conjuntos, como verificar se duas pessoas se conhecem.
+  >Tipo: Set<String>  <br>
+  Uso: Representa conjuntos de pessoas que se conhecem. A estrutura de conjunto é útil para verificar a existência de elementos e realizar operações de interseção entre conjuntos, como verificar se duas pessoas se conhecem. <br>
 
 Essas estruturas de dados foram escolhidas com base na eficiência das operações necessárias para as funcionalidades do projeto, como *adição*, *remoção* e *consulta de elementos*. 
 O uso de listas encadeadas e conjuntos otimiza as operações específicas do contexto de filas e grupos de pessoas.
 
 ## ⚙️ Funcionalidades
 
-1. *Criação de Filas:*
-    --Comando:  `criaFila: <idFila> `
+1. *Criação de Filas:* <br>
+    --Comando:  `criaFila: <idFila> ` <br>
     --Cria uma nova fila com o identificador especificado.
 
-2. *Atendimento de Filas:*
-    --Comando: `atendeFila: <idFila1> <idFila2> ...`
+2. *Atendimento de Filas:* <br>
+    --Comando: `atendeFila: <idFila1> <idFila2> ...` <br>
     --Realiza o atendimento nas filas especificadas, removendo o primeiro cliente de cada fila atendida.
 
-3. *Chegada de Clientes:*
-    --Comando: `chegou: <cliente1> <cliente2> ...`
+3. *Chegada de Clientes:* <br>
+    --Comando: `chegou: <cliente1> <cliente2> ...` <br>
     --Adiciona os clientes às filas de acordo com a lógica de conhecimento mútuo entre pessoas.
 
-4. *Desistência de Atendimento:*
-    --Comando: `desiste: <cliente1> <cliente2> ...`
+4. *Desistência de Atendimento:* <br>
+    --Comando: `desiste: <cliente1> <cliente2> ...` <br>
     --Remove os clientes especificados de todas as filas.
 
-5.*Criação de Grupos de Conhecidos:*
-    --Comando: `grupo: <nomeGrupo>: <pessoa1> <pessoa2>` ...
+  5. *Criação de Grupos de Conhecidos:* <br>
+    --Comando: `grupo: <nomeGrupo>: <pessoa1> <pessoa2>` ... <br>
     --Define um grupo de pessoas que se conhecem mutuamente.
 
-6. *Verificação de Conhecimento entre Pessoas:*
-    --Comando: `conhece: <pessoa1> <pessoa2>`
+  6. *Verificação de Conhecimento entre Pessoas:* <br>
+    --Comando: `conhece: <pessoa1> <pessoa2>` <br>
     --Verifica se duas pessoas se conhecem e exibe o resultado.
 
-7. *Verificação de Existência de Pessoa:*
-    --Comando: `existe: <pessoa>`
+  7. *Verificação de Existência de Pessoa:* <br>
+    --Comando: `existe: <pessoa>` <br>
     --Verifica se uma pessoa específica existe em algum grupo conhecido.
 
-8.*Impressão do Estado Atual das Filas:*
-    --Comando: `imprime`
+  8. *Impressão do Estado Atual das Filas:* <br>
+    --Comando: `imprime` <br>
     --Exibe o estado atual de todas as filas.
 
 ## 🔁 Simulação
 
 ### *Entrada:*
->criaFila: Guiche1
->criaFila: Guiche2
->chegou: Maria Joao
->chegou: Manuel Alface Guga
->atendeFila: Guiche1 Guiche2
->imprime
->desiste: Joao Alface
->imprime
->grupo: Amigos Maria Joao
->grupo: Familia Manuel Guga
->conhece: Maria Manuel
->conhece: Alface Guga
->imprime
->existe: Joao
->existe: Maria
+>criaFila: Guiche1 <br>
+>criaFila: Guiche2 <br>
+>chegou: Maria Joao <br>
+>chegou: Manuel Alface Guga <br>
+>atendeFila: Guiche1 Guiche2 <br>
+>imprime <br>
+>desiste: Joao Alface <br>
+>imprime <br>
+>grupo: Amigos Maria Joao <br>
+>grupo: Familia Manuel Guga <br>
+>conhece: Maria Manuel <br>
+>conhece: Alface Guga <br>
+>imprime <br>
+>existe: Joao <br>
+>existe: Maria <br>
 
 ### *Saída:*
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel, Alface, Guga]
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel, Alface, Guga] <br>
 
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel]
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel] <br>
 
->#Amigos [Maria, Joao] 
->#Familia [Manuel, Guga] 
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel]
+>#Amigos [Maria, Joao]  <br>
+>#Familia [Manuel, Guga]  <br>
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel] <br>
 
->[Maria]*conhece*[Manuel]
->[Alface]*NÃO conhece*[Guga]
+>[Maria]*conhece*[Manuel] <br>
+>[Alface]*NÃO conhece*[Guga] <br>
 
->#Amigos [Maria, Joao] 
->#Familia [Manuel, Guga] 
->#Guiche1 [Maria, Joao]
->#Guiche2 [Manuel]
+>#Amigos [Maria, Joao] <br>
+>#Familia [Manuel, Guga] <br>
+>#Guiche1 [Maria, Joao] <br>
+>#Guiche2 [Manuel] <br>
 
 ### *Explicação:*
 
@@ -155,12 +154,12 @@ O uso de listas encadeadas e conjuntos otimiza as operações específicas do co
 Essa simulação cobre diversos aspectos do código, incluindo a *criação de filas*, *atendimento*, *desistência*, *criação* e *verificação de grupos*, e *verificação de existência de pessoas*.
 
 
- ## 💡 Excecução
+ ## 💡 Execução
 
---Para executar o projeto, é necessário ter o *Java Development Kit (JDK)* instalado e configurado no sistema. 
---Além disso, o Visual Studio Code com a extensão *Java Extension Pack* é recomendado para facilitar o desenvolvimento.
---O arquivo de *entrada filas.txt* contém os comandos que serão processados pela aplicação para simular o comportamento das filas.
---Certifique-se de que o *Maven* está instalado no seu sistema. Você pode fazer o download do Maven em https://maven.apache.org/download.cgi e seguir as instruções de instalação.
---Abra um terminal na pasta onde está localizado o *arquivo pom.xml* do  projeto.
---Execute o seguinte comando para construir o projeto usando o Maven: *mvn clean install*
---Após a construção bem-sucedida, você pode executar o projeto.Execute o seguinte comando no terminal: *java -cp target/demo.jar.ClassePrincipal*
+--Para executar o projeto, é necessário ter o *Java Development Kit (JDK)* instalado e configurado no sistema. <br>
+--Além disso, o Visual Studio Code com a extensão *Java Extension Pack* é recomendado para facilitar o desenvolvimento.<br>
+--O arquivo de *entrada filas.txt* contém os comandos que serão processados pela aplicação para simular o comportamento das filas.<br>
+--Certifique-se de que o *Maven* está instalado no seu sistema. Você pode fazer o download do Maven em https://maven.apache.org/download.cgi e seguir as instruções de instalação.<br>
+--Abra um terminal na pasta onde está localizado o *arquivo pom.xml* do  projeto.<br>
+--Execute o seguinte comando para construir o projeto usando o Maven: *mvn clean install*<br>
+--Após a construção bem-sucedida, você pode executar o projeto.Execute o seguinte comando no terminal: *java -cp target/demo.jar.ClassePrincipal* <br>
