@@ -1,5 +1,5 @@
 grupo: Joao Olga
-grupo: Maria Manuel Alface Igor
+grupo: Maria Manuel Alface
 grupo: Fabio Duda Ivo
 existe: Olga
 existe: Julia

@@ -25,7 +25,7 @@ public class ClassePrincipal {
         String pathArquivo = "C:\\Users\\user\\Documents\\demo\\src\\main\\java\\com\\example\\filas.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(pathArquivo))) {
-            
+
             String linha;
 
             while ((linha = br.readLine()) != null) {
@@ -60,7 +60,7 @@ public class ClassePrincipal {
                 case "criaFila":
                     criarFila(parametros[0]);
                     break;
-                
+
                 case "atendeFila":
                     atenderFila(parametros);
                     break;
@@ -117,8 +117,7 @@ public class ClassePrincipal {
             Queue<Pessoa> filaConhecida = encontrarFilaConhecida(cliente);
             if (filaConhecida != null) {
                 inserirNaFilaAposConhecido(filaConhecida, cliente);
-            } 
-            else {
+            } else {
                 int menorTamanho = Integer.MAX_VALUE;
                 Queue<Pessoa> menorFila = null;
                 for (Queue<Pessoa> fila : filas.values()) {
@@ -129,9 +128,8 @@ public class ClassePrincipal {
                 }
                 if (menorFila != null) {
                     menorFila.add(new Pessoa(cliente));
-                } 
+                }
             }
-            System.out.println(imprimirFilas());
         }
     }
 
@@ -168,7 +166,7 @@ public class ClassePrincipal {
                 novaFila.add(pessoa);
                 if (i == posicaoMaisDistante) {
                     // Inserir a pessoa imediatamente após o conhecido mais distante
-                    novaFila.add(new Pessoa(nome)); 
+                    novaFila.add(new Pessoa(nome));
                 }
                 i++;
             }
@@ -228,6 +226,7 @@ public class ClassePrincipal {
             System.out.println("[" + nome1 + "] NÃO conhece [" + nome2 + "]");
         }
     }
+
     private static boolean _pessoasSeConhecem(String nome1, String nome2) {
         // Faz uma busca sequencial para verificar se as pessoas se conhecem ou não
         for (Set<String> pessoas : grupos.values()) {
